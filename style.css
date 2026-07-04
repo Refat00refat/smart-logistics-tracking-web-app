@@ -1,0 +1,182 @@
+/* basic styling for smart logistics tracker */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    color: #222;
+}
+
+.topbar {
+    background: #1b2a4a;
+    color: white;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.topbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.topbar a:hover {
+    text-decoration: underline;
+}
+
+.page-wrap {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+    min-height: 60vh;
+}
+
+h1 {
+    color: #1b2a4a;
+}
+
+.panel {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+button, .btn {
+    background: #e8801a;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .btn:hover {
+    background: #c76a10;
+}
+
+.btn-secondary {
+    background: #ccc;
+    color: #222;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background: #1b2a4a;
+    color: white;
+}
+
+.tracking-id {
+    font-family: monospace;
+    background: #1b2a4a;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.status {
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.status-pending { background: #fce8c9; color: #915b00; }
+.status-picked-up { background: #d4e2f7; color: #1b2a4a; }
+.status-in-transit { background: #fde0b8; color: #a15a00; }
+.status-out-for-delivery { background: #e4d4f7; color: #4b1f8f; }
+.status-delivered { background: #d2f0dd; color: #1b6b3f; }
+.status-delayed { background: #f8d5d2; color: #a3241d; }
+
+.timeline {
+    list-style: none;
+    padding-left: 0;
+}
+
+.timeline li {
+    border-left: 2px solid #ddd;
+    padding: 0 0 15px 15px;
+    margin-left: 5px;
+}
+
+.alert {
+    padding: 10px 15px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.alert-error { background: #f8d5d2; color: #a3241d; }
+.alert-success { background: #d2f0dd; color: #1b6b3f; }
+
+.stat-strip {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 12px 16px;
+    flex: 1;
+    min-width: 120px;
+    border-radius: 4px;
+}
+
+.stat-box .num {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1b2a4a;
+}
+
+.stat-box .lbl {
+    font-size: 12px;
+    color: #777;
+}
+
+.small { font-size: 13px; color: #777; }
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+    padding: 20px 0;
+}
